@@ -2,6 +2,7 @@
 	import '../app.css';
 	import favicon from '$lib/assets/favicon.svg';
 	import Navbar from '$lib/components/Navbar.svelte';
+	import BottomNav from '$lib/components/BottomNav.svelte';
 	import type { LayoutData } from './$types';
 
 	let { data, children }: { data: LayoutData; children: any } = $props();
@@ -15,7 +16,12 @@
 	{#if data.user}
 		<Navbar user={data.user} />
 	{/if}
-	{@render children()}
+	<div class="pb-16 lg:pb-0">
+		{@render children()}
+	</div>
+	{#if data.user}
+		<BottomNav />
+	{/if}
 </div>
 
 
