@@ -228,6 +228,39 @@
 					badge: 'GitHub'
 				}
 			]
+		},
+		{
+			id: 'apps',
+			label: 'Apps',
+			items: [
+				{
+					title: 'E-Budget',
+					desc: 'Budgeting & expenditure tracking systems',
+					href: 'https://e-budget.masagung.my.id',
+					isExternal: true,
+					badge: 'v1'
+				}
+			]
+		},
+		{
+			id: 'purwatechsolution',
+			label: 'Purwatech Solutions',
+			items: [
+				{
+					title: 'Portal Web',
+					desc: 'Web Portal Purwatech Soltions ',
+					href: 'https://portal.purwatechsolutions.com',
+					isExternal: true,
+					badge: 'V1'
+				},
+				{
+					title: 'Business Management System',
+					desc: 'Business Management System App ',
+					href: 'https://bms.purwatechsolutions.com',
+					isExternal: true,
+					badge: 'V1'
+				}
+			]
 		}
 	];
 </script>
